@@ -1,0 +1,11 @@
+<odoo>
+    <menuitem id="menu_student_root"
+              name="Student Management"
+              sequence="10"
+              web_icon="student_management,static/description/image_bg.jpg"
+    />
+    <menuitem id="menu_student" name="Students" parent="menu_student_root"/>
+    <menuitem id="menu_teacher" name="Employee" parent="menu_student_root"/>
+    <menuitem id="menu_course" name="Course" parent="menu_student_root"/>
+
+</odoo>

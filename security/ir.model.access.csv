@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_student,access.student,model_student_student,,1,1,1,1
+access_teacher,access.teacher.teacher,model_teacher_teacher,,1,1,1,1
+access_course,access.course.course,model_course_course,,1,1,1,1
+access_staff,access.staff.staff,model_staff_staff,,1,1,1,1
+access_unified_search_person,access_unified_search_person,model_unified_person_search,,1,1,1,1
+access_unified_search_result,access_unified_search_result,model_unified_person_result,,1,1,1,1

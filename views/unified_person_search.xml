@@ -1,0 +1,33 @@
+<odoo>
+    <record id="view_unified_person_search_form" model="ir.ui.view">
+        <field name="name">unified.person.search.form</field>
+        <field name="model">unified.person.search</field>
+        <field name="arch" type="xml">
+            <form string="Unified Search">
+                <group>
+                    <field name="search_term"/>
+                    <button name="action_search" type="object" string="Search" class="btn-primary"/>
+                </group>
+                <separator string="Results"/>
+                <field name="result_ids">
+                    <tree editable="bottom">
+                        <field name="name"/>
+                        <field name="role"/>
+                        <field name="related_model"/>
+                        <field name="related_id"/>
+                    </tree>
+                </field>
+            </form>
+        </field>
+    </record>
+
+<!--    <menuitem id="menu_unified_search" name="Unified Search" sequence="100"/>-->
+    <record id="action_unified_person_search" model="ir.actions.act_window">
+        <field name="name">Unified Search</field>
+        <field name="res_model">unified.person.search</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_unified_search_action" parent="menu_student_root"
+              action="action_unified_person_search" sequence="101"/>
+</odoo>
